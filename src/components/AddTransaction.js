@@ -10,7 +10,7 @@ function AddTransaction() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addInput({ expenseName: text, amount: amount });
+        addInput({ expenseName: text, amount: Number(amount) });
     };
 
     return (

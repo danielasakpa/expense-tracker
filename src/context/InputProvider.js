@@ -11,6 +11,8 @@ const InputProvider = ({ children }) => {
     const addInput = (newInput) => {
         setExpenses((prevList) => [...prevList, newInput]);
 
+        console.log(newInput)
+
         if (newInput.amount > 0) {
             // Calculate and update income
             setIncome((prevIncome) => prevIncome + newInput.amount);
